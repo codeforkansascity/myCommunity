@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/samishukri/myCommunity/node_modules/react-native/Libraries/Image/RCTImageViewManager.m \
+  /Users/samishukri/myCommunity/node_modules/react-native/Libraries/Image/RCTImageViewManager.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/samishukri/myCommunity/node_modules/react-native/Libraries/Image/RCTImageLoader.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTResizeMode.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestHandler.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h \
+  /Users/samishukri/myCommunity/node_modules/react-native/Libraries/Image/RCTImageShadowView.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/samishukri/myCommunity/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/samishukri/myCommunity/node_modules/react-native/Libraries/Image/RCTImageView.h
