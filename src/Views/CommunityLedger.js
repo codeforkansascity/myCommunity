@@ -14,7 +14,7 @@ class Ledger extends Component {
   }
   render() {
     return(
-      <View style={{ paddingTop: 30, marginRight: 5, marginLeft: 5}}>
+      <View style={{ paddingTop: 30, marginRight: 15, marginLeft: 15}}>
       <View style={{height: 50, flexDirection: 'row'}}>
         <View style={{  flex: 1,
                         borderTopWidth: 1,
