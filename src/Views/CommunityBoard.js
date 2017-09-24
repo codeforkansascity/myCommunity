@@ -37,7 +37,7 @@ class Board extends Component {
             value={this.state.input}
             onChange={this.onChangeText.bind(this)}
           />
-          <Button title='submit' />
+          <Button title='submit' buttonStyle={{ backgroundColor: '#222222' }} />
       </View>
     )
   }

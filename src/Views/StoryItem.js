@@ -8,7 +8,14 @@ class StoryItem extends Component {
     return(
       <View style={styles.StoryStyle}>
         <View style={styles.Header}>
-          <View style={{  backgroundColor: '#222222',borderRightWidth: 1, borderColor: 'lightgrey', paddingTop: 10, paddingRight: 15}}>
+          <View style={{
+                        backgroundColor: '#222222',
+                        borderRightWidth: 1,
+                        borderTopLeftRadius: 5,
+                        borderColor: 'lightgrey',
+                        paddingLeft: 15,
+                        paddingTop: 10,
+                        paddingRight: 15}}>
             <Text style={{ color: 'white' }}>Title:</Text>
           </View>
           <View style={{ paddingLeft: 20, paddingTop: 10}}>
@@ -16,16 +23,22 @@ class StoryItem extends Component {
           </View>
         </View>
         <View style={styles.Desc}>
-          <View style={{ backgroundColor: '#222222', borderRightWidth: 1, borderColor: 'lightgrey', paddingTop: 10, paddingRight: 10}}>
+          <View style={{
+                        backgroundColor: '#222222',
+                        borderRightWidth: 1,
+                        paddingLeft: 15,
+                        borderColor: 'lightgrey', paddingTop: 10,
+                        paddingRight: 10
+                      }}>
             <Text style={{ color: 'white' }}>Desc:</Text>
           </View>
-          <View style={{ paddingLeft: 20, paddingTop: 10}}>
+          <View style={{ paddingLeft: 20, paddingTop: 10, marginRight: 20}}>
             <Text>{this.props.Desc}</Text>
           </View>
         </View>
         <View style={styles.Footer}>
           <View style={{ flex: 1}}>
-            <Text>{percent.toFixed(2)}% voted yes</Text>
+            <Text style={{ color: 'white'}}>{percent.toFixed(2)}% voted yes</Text>
           </View>
           <View style={{ flex: 1,  borderColor: 'lightgrey', flexDirection: 'row', alignItems: 'flex-end'}}>
             <TouchableHighlight style={{
@@ -68,6 +81,7 @@ const styles = {
     borderColor: 'lightgrey'
   },
   Desc : {
+    height: 70,
     paddingRight: 20,
     borderBottomWidth: 1,
     flexDirection: 'row',
@@ -80,14 +94,18 @@ const styles = {
     paddingRight: 20,
     borderBottomWidth: 1,
     flexDirection: 'row',
-    borderColor: 'lightgrey'
+    borderColor: 'lightgrey',
+    backgroundColor: '#222222',
+    borderBottomRightRadius: 5,
+    borderBottomLeftRadius: 5
+
   },
   StoryStyle : {
     marginBottom: 15,
     borderWidth: 1,
     borderColor: 'lightgrey',
     borderRadius: 5,
-    marginTop: 15
+    marginTop: 15,
   }
 }
 

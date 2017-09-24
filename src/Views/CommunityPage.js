@@ -84,14 +84,6 @@ class Page extends Component {
           </View>
           <Board />
         </View>
-        <View style={{ marginRight: 15, marginLeft: 15}}>
-          <StoryItem
-            title='Save the park'
-            Desc='the last storm has caused major problems I propse rebuilding it'
-            number={30}
-            communityCount={83}
-            />
-        </View>
         <View style={{
                       borderTopWidth: 1,
                       borderColor: 'lightgrey',
