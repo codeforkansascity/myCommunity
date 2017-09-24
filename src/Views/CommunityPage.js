@@ -7,7 +7,7 @@ import Board from './CommunityBoard';
 class Page extends Component {
   render() {
     return(
-      <View style={{ flex: 1}}>
+      <View style={{ flex: 1, backgroundColor: 'white'}}>
       <View style={{
                     borderBottomWidth: 1,
                     alignItems: 'center',
@@ -53,7 +53,7 @@ class Page extends Component {
         <View style={{ borderTopWidth: 1, borderColor: 'lightgrey', marginTop: 30}}>
           <Board />
         </View>
-        <View style={{ borderTopWidth: 1, borderColor: 'lightgrey', marginTop: 30}}>
+        <View style={{ borderTopWidth: 1, borderColor: 'lightgrey', marginTop: 30, paddingBottom: 50}}>
           <Ledger />
         </View>
       </ScrollView>
