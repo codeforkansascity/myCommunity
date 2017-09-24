@@ -24,7 +24,7 @@ create in a way a saving account for areas to use.
    can vote on releasing some funds to repair the road.
 4. A local community can use the money for anything as long as more than 50%
    of the network votes on releasing the funds. communities can start stories
-   to start ventures, provide loans, improve their local area.
+   to start ventures, provide loans and/or improve their local area.
 
 The idea behind My Community is to unify individuals in a certain areas to a
 common goal. And since the ledger of transactions exists on everyone's device
