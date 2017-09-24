@@ -13,12 +13,13 @@ class StoryItem extends Component {
                         borderRightWidth: 1,
                         borderTopLeftRadius: 5,
                         borderColor: 'lightgrey',
+                        width: 90,
                         paddingLeft: 15,
-                        paddingTop: 10,
-                        paddingRight: 15}}>
+                        paddingTop: 10
+                      }}>
             <Text style={{ color: 'white' }}>Title:</Text>
           </View>
-          <View style={{ paddingLeft: 20, paddingTop: 10}}>
+          <View style={{ paddingLeft: 20, paddingTop: 10, flex: 5}}>
             <Text>{this.props.title}</Text>
           </View>
         </View>
@@ -26,14 +27,29 @@ class StoryItem extends Component {
           <View style={{
                         backgroundColor: '#222222',
                         borderRightWidth: 1,
+                        width: 90,
                         paddingLeft: 15,
                         borderColor: 'lightgrey', paddingTop: 10,
-                        paddingRight: 10
                       }}>
-            <Text style={{ color: 'white' }}>Desc:</Text>
+            <Text style={{ color: 'white' }}>Reason:</Text>
           </View>
-          <View style={{ paddingLeft: 20, paddingTop: 10, marginRight: 20}}>
+          <View style={{ paddingLeft: 5, paddingTop: 10, flex: 5}}>
             <Text>{this.props.Desc}</Text>
+          </View>
+        </View>
+        <View style={styles.Header}>
+          <View style={{
+                        backgroundColor: '#222222',
+                        borderRightWidth: 1,
+                        borderColor: 'lightgrey',
+                        width: 90,
+                        paddingLeft: 15,
+                        paddingTop: 10,
+                        paddingRight: 10}}>
+            <Text style={{ color: 'white' }}>Cost:</Text>
+          </View>
+          <View style={{ paddingLeft: 20, paddingTop: 10, flex: 5}}>
+            <Text>{this.props.cost}</Text>
           </View>
         </View>
         <View style={styles.Footer}>

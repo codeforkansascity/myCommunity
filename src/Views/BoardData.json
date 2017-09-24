@@ -1,22 +1,26 @@
 {
   0 : {
     "title": "rebuild park bungalow",
-    "desc":" Last Storm caused damage to the park bangalow ",
+    "desc":"Last Storm caused damage to the park bungalow ",
+    "cost": 230,
     "votercount": "12"
   },
   1 : {
     "title": "Street Repair",
-    "desc":" Last Storm caused damage to the street on 65th and Main",
+    "desc":"Last Storm caused damage to the street on 65th and Main",
+    "cost": 1000,
     "votercount": "48"
   },
   2 : {
     "title": "Summer Block Party",
-    "desc": "Lets through a Block Part before school starts",
+    "desc": "Lets throw a Block Party before school starts",
+    "cost": 200,
     "votercount": "23"
   },
   3 : {
     "title": "Tree planting",
     "desc": "Our area needs more trees, lets plant some and make it look nice",
+    "cost": 50,
     "votercount": "68"
   }
 }

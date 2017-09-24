@@ -23,6 +23,7 @@ class BoardPage extends Component {
               title={rowData.title}
               Desc={rowData.desc}
               number={rowData.votercount}
+              cost={rowData.cost}
               communityCount={83}
               />
           </View>}/>
