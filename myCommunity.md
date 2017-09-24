@@ -1,4 +1,4 @@
-#My Community is app that aims to make public spending, and HOA's as transparent as possible
+**My Community is app that aims to make public spending, and HOA's as transparent as possible**
 
 My Community aims to create small blockchains that run on individuals personal
 smartphones for communities to manage, the way it works is when individuals
@@ -10,7 +10,7 @@ After a user joins a blockchain they will be expected to make a monthly
 contribution to their Communities box. The reason behind the community is to
 create in a way a saving account for areas to use.
 
-#Some examples
+**Some examples**
 
 1. The local school in the area needs some rooms to be repainted, an individual
    in the community can create something called a 'Story'. He will describe the
