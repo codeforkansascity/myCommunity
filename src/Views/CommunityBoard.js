@@ -9,14 +9,14 @@ class Board extends Component {
       <View style={{ flex: 1, marginTop: 20}}>
         <TextInput style={{
           backgroundColor: 'white',
-          marginRight: 10,
-          marginLeft: 10,
+          marginRight: 15,
+          marginLeft: 15,
           paddingTop: 5,
           paddingBottom: 5
         }}/>
-        <View style={{ alignItems: 'flex-end'}}>
-          <Button title='submit' />
-        </View>
+          <View style={{ alignItems: 'flex-end'}}>
+            <Button title='submit' />
+          </View>
       </View>
     )
   }
