@@ -23,8 +23,7 @@ class Ledger extends Component {
                         borderTopLeftRadius: 5,
                         paddingTop: 15,
                         borderColor: 'lightgrey',
-                        alignItems: 'center'
-        }}>
+                        alignItems: 'center'}}>
           <Text style={{color: 'white'}}>Date</Text>
         </View>
         <View style={{
@@ -99,17 +98,33 @@ class Ledger extends Component {
      }}>
      <Button title=' View More'
              textStyle={{ color: 'white', fontWeight: 'bold'}}
-             buttonStyle={{
-                           marginTop: 10,
-                           height: 10,
-                           borderRadius: 5,
-                           backgroundColor: '#222222',
-                           borderWidth: 0,
-                           borderColor: 'lightgrey'
-                         }}/>
+             buttonStyle={styles.buttonStyling}/>
      </View>
    </View>
     );
+  }
+}
+
+const styles = {
+  buttonStyling: {
+    marginTop: 10,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: '#222222',
+    borderWidth: 0,
+    borderColor: 'lightgrey'
+  },
+  leftTableCol: {
+    flex: 1,
+    borderBottomWidth: 1,
+    borderRightWidth: 1,
+    borderLeftWidth: 1,
+    paddingTop: 10,
+    borderColor: 'lightgrey',
+    alignItems: 'center'
+  },
+  rightTableCol: {
+    
   }
 }
 
