@@ -5,123 +5,108 @@ import { Button } from 'react-native-elements';
 class StoryItem extends Component {
   render() {
     const percent = (this.props.number)/(this.props.communityCount) * 100
+
     return(
-      <View style={styles.StoryStyle}>
-        <View style={styles.Header}>
-          <View style={{
-                        backgroundColor: '#222222',
-                        borderRightWidth: 1,
-                        borderTopLeftRadius: 5,
-                        borderColor: 'lightgrey',
-                        width: 90,
-                        paddingLeft: 15,
-                        paddingTop: 10
-                      }}>
-            <Text style={{ color: 'white' }}>Title:</Text>
-          </View>
-          <View style={{ paddingLeft: 20, paddingTop: 10, flex: 5}}>
-            <Text>{this.props.title}</Text>
-          </View>
-        </View>
-        <View style={styles.Desc}>
-          <View style={{
-                        backgroundColor: '#222222',
-                        borderRightWidth: 1,
-                        width: 90,
-                        paddingLeft: 15,
-                        borderColor: 'lightgrey', paddingTop: 10,
-                      }}>
-            <Text style={{ color: 'white' }}>Reason:</Text>
-          </View>
-          <View style={{ paddingLeft: 5, paddingTop: 10, flex: 5}}>
-            <Text>{this.props.Desc}</Text>
-          </View>
-        </View>
-        <View style={styles.Header}>
-          <View style={{
-                        backgroundColor: '#222222',
-                        borderRightWidth: 1,
-                        borderColor: 'lightgrey',
-                        width: 90,
-                        paddingLeft: 15,
-                        paddingTop: 10,
-                        paddingRight: 10}}>
-            <Text style={{ color: 'white' }}>Cost:</Text>
-          </View>
-          <View style={{ paddingLeft: 20, paddingTop: 10, flex: 5}}>
-            <Text>{this.props.cost}</Text>
-          </View>
-        </View>
-        <View style={styles.Footer}>
-          <View style={{ flex: 1}}>
-            <Text style={{ color: 'white'}}>{percent.toFixed(2)}% voted yes</Text>
-          </View>
-          <View style={{ flex: 1,  borderColor: 'lightgrey', flexDirection: 'row', alignItems: 'flex-end'}}>
-            <TouchableHighlight style={{
-                                        flex: 1,
-                                        borderWidth: 1,
-                                        alignItems: 'center',
-                                        borderTopLeftRadius: 5,
-                                        borderBottomLeftRadius: 5,
-                                        backgroundColor: '#99ff99',
-                                        paddingLeft: 0,
-                                        width: 50
-                                      }}>
-              <Text>Yes</Text>
-            </TouchableHighlight>
-            <TouchableHighlight style={{
-                                        flex: 1,
-                                        borderWidth: 1,
-                                        alignItems: 'center',
-                                        borderLeftWidth: 0,
-                                        borderTopRightRadius: 5,
-                                        borderBottomRightRadius: 5,
-                                        backgroundColor: '#FF3333'
-                                      }}>
-              <Text>No</Text>
-            </TouchableHighlight>
-          </View>
+      <View style={styles.StoryContainer}>
+        <View style={styles.VotingResult}>
+          <Text style={styles.VotingResultText}>{percent.toFixed(2)}% voted yes</Text>
         </View>
 
+        <View style={styles.StoryTextContainer}>
+          <Text>
+            <Text style={styles.StoryHeaderText}>Title: </Text>
+            <Text style={styles.StoryDescriptionText}>{this.props.title}</Text>
+          </Text>
+
+          <Text>
+            <Text style={styles.StoryHeaderText}>Reason: </Text>
+            <Text style={styles.StoryDescriptionText}>{this.props.Desc}</Text>
+          </Text>
+
+          <Text>
+            <Text style={styles.StoryHeaderText}>Cost: </Text>
+            <Text style={styles.StoryDescriptionText}>{this.props.cost}</Text>
+          </Text>
+        </View>
+
+        <View style={styles.FooterButtons}>
+          <View>
+            <TouchableHighlight>
+              <View style={styles.YesButton}>
+                <Text style={styles.ButtonText}>Yes</Text>
+              </View>
+            </TouchableHighlight>
+          </View>
+
+          <View>
+            <TouchableHighlight>
+              <View style={styles.NoButton}>
+                <Text style={styles.ButtonText}>No</Text>
+              </View>
+            </TouchableHighlight>
+          </View>
+        </View>
       </View>
     );
   }
 }
 
 const styles = {
-  Header : {
-    height: 40,
-    paddingRight: 20,
-    borderBottomWidth: 1,
-    flexDirection: 'row',
-    borderColor: 'lightgrey'
-  },
-  Desc : {
-    height: 70,
-    paddingRight: 20,
-    borderBottomWidth: 1,
-    flexDirection: 'row',
-    borderColor: 'lightgrey'
-  },
-  Footer : {
-    paddingTop: 10,
-    paddingBottom: 10,
-    paddingLeft: 20,
-    paddingRight: 20,
-    borderBottomWidth: 1,
-    flexDirection: 'row',
-    borderColor: 'lightgrey',
-    backgroundColor: '#222222',
-    borderBottomRightRadius: 5,
-    borderBottomLeftRadius: 5
-
-  },
-  StoryStyle : {
-    marginBottom: 15,
-    borderWidth: 1,
-    borderColor: 'lightgrey',
-    borderRadius: 5,
+  StoryContainer: {
+    backgroundColor: "lightgray",
     marginTop: 15,
+    marginBottom: 15,
+    paddingTop: 20,
+    paddingRight: 20,
+    paddingBottom: 20,
+    paddingLeft: 20
+  },
+  VotingResult: {
+    marginBottom: 15,
+    flex: 1,
+    alignItems: "center"
+  },
+  VotingResultText: {
+    fontSize: 24
+  },
+  FooterButtons: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginTop: 20
+  },
+  YesButton: {
+    backgroundColor: "green",
+    width: 100,
+    height: 30,
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  NoButton: {
+    backgroundColor: "red",
+    width: 100,
+    height: 30,
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  ButtonText: {
+    color: "white"
+  },
+  StoryTextContainer: {
+    backgroundColor: "white",
+    paddingTop: 10,
+    paddingRight: 10,
+    paddingBottom: 10,
+    paddingLeft: 10
+  },
+  StoryHeaderText: {
+     fontSize: 16,
+     fontWeight:"bold"
+  },
+  StoryDescriptionText: {
+    fontSize: 14
   }
 }
 
