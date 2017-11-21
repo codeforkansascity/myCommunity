@@ -59,13 +59,8 @@ class Page extends Component {
             <View style={{ alignItems: 'flex-end'}}>
               <Button title=' View More'
                       onPress={this.onButtonPress}
-                      textStyle={{ color: 'black', fontWeight: 'bold'}}
-                      buttonStyle={{
-                                  borderRadius: 5,
-                                  backgroundColor: 'white',
-                                  borderWidth: 0,
-                                  borderColor: 'lightgrey'
-                                }}/>
+                      textStyle={styles.buttonTextStyle}
+                      buttonStyle={styles.buttonStyle}/>
 
             </View>
           </View>
@@ -106,6 +101,20 @@ class Page extends Component {
         </ScrollView>
       </View>
     );
+  }
+}
+
+const styles = {
+  buttonStyle : {
+    borderRadius: 5,
+    backgroundColor: 'white',
+    borderWidth: 0,
+    borderColor: 'lightgrey'
+  },
+
+  buttonTextStyle : {
+    color: 'black',
+    fontWeight: 'bold'
   }
 }
 

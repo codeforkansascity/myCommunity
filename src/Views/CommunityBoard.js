@@ -15,7 +15,7 @@ class Board extends Component {
     return(
       <View style={{ flex: 1, marginTop: 20}}>
           <View style={{ borderBottomWidth: 1, borderColor: 'lightgrey', marginRight: 10, marginLeft: 10}}>
-            <Text> Story Title</Text>
+            <Text> Story Title </Text>
           </View>
             <TextInput
               style={styles.titleStyle}
@@ -29,7 +29,7 @@ class Board extends Component {
                         marginLeft: 10,
                         marginTop: 10
                       }}>
-            <Text> Description</Text>
+            <Text> Description </Text>
           </View>
           <TextInput
             multiline={true}
@@ -51,10 +51,12 @@ const styles = {
     paddingRight: 15,
     paddingBottom: 20
   },
+
   imageContainer : {
      flex: 1,
      padding: 15
   },
+
   Container : {
      flex: 1,
      borderWidth: 0.5,
@@ -67,6 +69,7 @@ const styles = {
      borderColor: 'lightgrey',
      marginBottom: 10
   },
+
   inputStyle: {
     marginRight: 15,
     marginLeft: 15,
@@ -81,6 +84,7 @@ const styles = {
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
   },
+
   titleStyle: {
     marginRight: 15,
     marginLeft: 15,
